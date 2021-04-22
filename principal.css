@@ -5,6 +5,11 @@
 
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
 #scratch {
     position: relative;
     width: 100%;
@@ -17,6 +22,7 @@
     color: #fff !important;
     font-size: 23px;
     padding: 1em;
+    margin-bottom: 30px;
 }
 
 .txtOpcoes {
@@ -28,6 +34,7 @@
     margin-top: 0;
     border-radius: 50px;
     height: 40px;
+    margin-bottom: 10px;
 }
 
 .red {
@@ -42,13 +49,13 @@
     margin-top: 40%;
     height: 70%;
     width: 90%;
-    background-color: #4b204b;
+    background-color: cornflowerblue;
     border-radius: 20px;
     border: 3px solid #341933;
     box-shadow: 1px 1px 12px 10px rgba(0, 0, 0, .25);
     flex-direction: column;
     align-items: center;
-    padding: 1em 0;
+    padding: 60px 15px;
 }
 
 #box-1 {
