@@ -51,24 +51,8 @@
     padding: 1em 0;
 }
 
-#box-1 {
+#box-1, #box-2, #box-3, #box-4, #box-5  {
     display: flex;
-}
-
-#box-2 {
-    display: none;
-}
-
-#box-3 {
-    display: none;
-}
-
-#box-4 {
-    display: none;
-}
-
-#box-5 {
-    display: none;
 }
 
 .body {
