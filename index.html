@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brejinha</title>
+    <link rel="stylesheet" type="text/css" href="principal.css">
+</head>
+<body class="body">
+    <div id="box-1" class="box">
+
+        <p class="title">Questão 1-) Qual o teor alcoólico da cerveja?</p>
+        <div>
+        <button class="txtOpcoes certo" onclick="btnCerto1()">a - 5.3%</button>
+        <button class="txtOpcoes errado" onclick="btnCerto1()">b - 7,9%</button>
+        <button class="txtOpcoes errado" onclick="btnCerto1()">c - 5,5%</button>
+        <button class="txtOpcoes errado" onclick="btnCerto1()">d - 4.9%</button>
+    </div>
+        
+    
+    </div>
+    <div id="box-2" class="box">
+    
+        <h3 class="title">Questão 2-) País de origem: </h3>
+        <button class="txtOpcoes errado" onclick="btnCerto2()">a - Brasil</button>
+        <button class="txtOpcoes errado" onclick="btnCerto2()">b - Alemanha</button>
+        <button class="txtOpcoes certo" onclick="btnCerto2()">c - México</button>
+        <button class="txtOpcoes errado" onclick="btnCerto2()">d - Colômbia</button>
+        
+    
+    </div>
+    <div id="box-3" class="box">
+        <div>
+        <h3 class="title">Questão 3-) País de origem: </h3>
+        <button class="txtOpcoes errado" onclick="btnCerto3()">a - Brasil</button>
+        <button class="txtOpcoes errado" onclick="btnCerto3()">b - Alemanha</button>
+        <button class="txtOpcoes certo" onclick="btnCerto3()">c - México</button>
+        <button class="txtOpcoes errado" onclick="btnCerto3()">d - Colômbia</button>
+        </div>
+    
+    </div>
+    <div id="box-4" class="box">
+        <div>
+        <h3 class="title">Questão 4-) País de origem: </h3>
+        <button class="txtOpcoes errado" onclick="btnCerto4()">a - Brasil</button>
+        <button class="txtOpcoes errado" onclick="btnCerto4()">b - Alemanha</button>
+        <button class="txtOpcoes certo" onclick="btnCerto4()">c - México</button>
+        <button class="txtOpcoes errado" onclick="btnCerto4()">d - Colômbia</button>
+        </div>
+    
+    </div>
+    <div id="box-5" class="box">
+        <div>
+        <p class="title">Questão 5-) País de origem: </p>
+        <button class="txtOpcoes errado" onclick="btnCerto5()">a - Brasil</button>
+        <button class="txtOpcoes errado" onclick="btnCerto5()">b - Alemanha</button>
+        <button class="txtOpcoes certo" onclick="btnCerto5()">c - México</button>
+        <button class="txtOpcoes errado" onclick="btnCerto5()">d - Colômbia</button>
+        </div>
+    
+    </div>
+
+    <div id="scratch"></div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="wScratchPad.min.js"></script>
+    <script type="text/javascript">
+        $('#scratch').wScratchPad({
+            size        : 50,          // The size of the brush/scratch.
+            bg          : 'skol.jpg',  // Background (image path or hex color).
+            fg          : 'back.jpg',  // Foreground (image path or hex color).
+});
+</script>
+<script>
+function btnCerto1() {
+        $(".errado").addClass("red")
+        $(".certo").addClass("green")
+        setTimeout(function(){
+         $("#box-1").css("display", "none")
+         $(".errado").removeClass("red")
+         $(".certo").removeClass("green")
+         $("#box-2").css("display", "flex")
+        }, 3000)
+       
+
+    }
+    function btnCerto2() {
+        $(".errado").addClass("red")
+        $(".certo").addClass("green")
+        setTimeout(function(){
+         $("#box-2").css("display", "none")
+         $(".errado").removeClass("red")
+         $(".certo").removeClass("green")
+         $("#box-3").css("display", "flex")
+        }, 3000)
+
+    }
+    function btnCerto3() {
+        $(".errado").addClass("red")
+        $(".certo").addClass("green")
+        setTimeout(function(){
+         $("#box-3").css("display", "none")
+         $(".errado").removeClass("red")
+         $(".certo").removeClass("green")
+         $("#box-4").css("display", "flex")
+        }, 3000)
+
+    }
+    function btnCerto4() {
+        $(".errado").addClass("red")
+        $(".certo").addClass("green")
+        setTimeout(function(){
+         $("#box-4").css("display", "none")
+         $(".errado").removeClass("red")
+         $(".certo").removeClass("green")
+         $("#box-5").css("display", "flex")
+        }, 3000)
+
+    }
+    function btnCerto5() {
+        $(".errado").addClass("red")
+        $(".certo").addClass("green")
+        setTimeout(function(){
+         $("#box-5").css("display", "none")
+         $(".errado").removeClass("red")
+         $(".certo").removeClass("green")
+         $("body").removeClass("body")
+         $("#scratch").css("display", "block")
+        }, 3000)
+
+    }
+    </script>
+
+</body>
+</html>
